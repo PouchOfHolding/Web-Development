@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supplements Store - Alive Check</title>
+</head>
+<body>
+  <h1>DAW - Supplements Store</h1>
+
+  <!-- este <div> tem o atributo id="status" que serve como um identificador único na página -->
+  <!-- O texto dentro da div será apagado pelo JavaScript e substituído pelos dados da API-->
+  <div id="status">A carregar o estado do servidor...</div>
+  <h2>Catálogo de suplementos</h2>
+  <div id="books-catalog"></div>
+
+  <h2>Notificações em tempo real</h2>
+  <div id="live-notifications"></div>
+
+
+  <!-- Ligação ao script principal em TypeScript -->
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
