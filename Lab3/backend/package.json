@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "tsc && node -e \"require('node:fs').copyFileSync('../shared/package.json', 'dist/shared/package.json')\"",
+    "dev": "tsx watch src/server.ts",
+    "start": "node dist/backend/src/server.js"
+  },
+  "devDependencies": {
+    "@types/compression": "^1.8.1",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.4",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "compression": "^1.8.2",
+    "express": "^5.3.0"
+  }
+}
