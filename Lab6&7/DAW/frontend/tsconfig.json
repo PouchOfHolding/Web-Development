@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "isolatedModules": true, //verifica se cada ficheiro se : compila sozinho (o Vite funciona assim)
+    "jsx": "react-jsx", //deixa o TypeScript aceitar <App /> em .tsx e não precisamos do import React em cada ficheiro
+    "jsxImportSource": "react", //diz de onde vêm as funçoes internas do JSX
+    "noEmit": true, //tsc só verifica tipos, quem gere os ficheiros finais é o Vite
+
+  },
+  "include": ["src/**/*", "../shared/**/*"]
+}
